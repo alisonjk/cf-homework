@@ -14,9 +14,13 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/skeleton.css">
+
+        <link rel="stylesheet" type="text/css" href="delicious.css" />
+                <link rel="stylesheet" href="skeleton.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abel|Droid+Serif:400,700,400italic,700italic|Patrick+Hand|Yellowtail" />
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -27,31 +31,36 @@
         <!-- Primary Page Layout-->
 
     <header>
-        <img src="logo.jpg" alt="Delicious" />
-        <h1><a href="http://delcious.com">Delicious</h1>
-        <p>The best food blog on the web.</p>
-        <ul class "social-links">
-            <li><a href="http://www.facebook.com/"></a></li>
-            <li><a href="http://www.twitter.com/"></a></li>
-            <li><a href="http://www.google.com/plus"></a></li>
-            <li><a href="http://www.instagram.com/"></a></li>
-            <li><a href="http://www.flickr.com/"></a></li>
-            <li><a href="http://www.pinterest.com/"></a></li>
-            <li><a href="http://www.deliciousrss.xml/"></a></li>
-            <li><a href="http://www.delicious.com/subscribe/"></a></li>
-        </ul>
+        <section class="blog">
+                    <img src="logo.jpg" width="45px" class="logo"/>
+            <h1><a href="http://delicious.com">Delicious</a>
+            <strong>The best food blog on the web.</strong></h1>
+          <section class="header clearfix">
+                <ul class="social clearfix">
+                    <a href="#" title="Facebook"><img src="facebook.jpg" width="24px"></a>
+                    <a href="#" title="Twitter"><img src="facebook.jpg" width="24px"></a>
+                    <a href="#" title="Google+"><img src="facebook.jpg" width="24px"></a>
+                    <a href="#" title="Instagram"><img src="facebook.jpg" width="24px"></a>
+                    <a href="#" title="Flickr"><img src="facebook.jpg" width="24px"></a>
+                    <a href="#" title="Pinterest"><img src="facebook.jpg" width="24px"></a>
+
+                    <a href="http://181.224.134.100/rss/" target="_blank" class="icon-rss" title="RSS"></a>
+                    <a href="mailto:youremail@ghost-delicious.com" class="icon-mail" title="Email"></a>
+                </ul>
+
     </header>
-    <section>
-        <h2>Chocolate Pizza</h2>
-        <p>Posted on 15 Dec 2013 / Desserts</p>
-        <button>Print</button>
-        <article>
-            <img src="http://picturestuff.com"/>
+        <div class="divider"></div>
+    <section class="main">
+        <h2>Chocolate Pizza
+        <strong>Posted on 15 Dec 2013 /<span class="type"> Desserts</span>
+        <button class="print">Print</button></strong></h2>
+            <article>
+                <img src="pizza.jpg" width="900px"/>
             <p>For the fig swirl: Melt butter over medium heat in a saucepan. Add brown sugar and stir to dissolve. Halve all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring frequently, until you have a chunky-jammy mixture. Add salt with one or two stires, set aside and let cool completely.</p>
             <p>Ice cream: In a small pot over medium heat, combine milk and granulated sugar until sugar is completely dissolved and the milk is just barely lukewarm. Whisk in the egg yolks. Set mixture in the fridge and wait until the fig mixture is cooled.</p>
             <p>Using an ice cream machine, pour liquids into the frozen basin and process according to manufacturer instructions, i.e., let spin and thicken for 20 minutes before adding mascarpone, fig jam micture, and the nuts. Continue to process for +/- 10 minutes. Pour semi-frozen micture into a pyrex dish or glass tupperware. Freeze for at least two hours before serving.</p>
-        
-            <ul>
+
+            <ul class="ingredients">
                 <li>1 1/2 cups milk</li>
                 <li>1/2 cup mascarpone</li>
                 <li>1/2 tsp pink salt</li>
@@ -70,18 +79,19 @@
 
     </section>
 
-    <div class="section-break">
+    <div class="divider"></div>
 
-
-
-    <section>
-        <img src="vanessa.jpg" alt="Vanessa Stevenson" />
+    <section class="author">
+        <img src="vanessa.jpg" alt="Vanessa Stevenson" width="100px">
+        <aside>
+            <a href="www.sharelinkgoeshere.com"/>Share Recipe</a>
+        </aside>
         <h3>Vanessa Stevenson</h3>
         <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
+
+
     </section>
-    <aside>
-        <a href="www.sharelinkgoeshere.com"/>Share Recipe</a>
-    </aside>
+
     <footer>
         <p>Delicious © 2013 All Rights Reserved.</p>
         <p>Proudly published with Ghost.</p>
